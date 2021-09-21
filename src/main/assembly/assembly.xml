@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.1.0.xsd">
+    <id>all</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <fileSet>
+            <directory>bin</directory>
+            <outputDirectory>bin</outputDirectory>
+            <fileMode>0755</fileMode>
+        </fileSet>
+        <fileSet>
+            <directory>target/classes</directory>
+            <outputDirectory>config</outputDirectory>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.yaml</include>
+                <include>**/*.yml</include>
+                <include>**/*.xml</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>resource</directory>
+            <outputDirectory>resource</outputDirectory>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>LICENSE</source>
+        </file>
+        <file>
+            <source>README.md</source>
+        </file>
+    </files>
+</assembly>

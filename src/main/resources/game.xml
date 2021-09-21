@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <window title="Tetris" titleHeight="32" width="764" height="718"/>
+    <game width="10" height="20" level="20"/>
+    <panels border="7" padding="16">
+        <panel name="PlayfieldPanel" x="32" y="0" width="334" height="654"/>
+        <panel name="NextPanel" x="398" y="0" width="167" height="116"/>
+        <panel name="LevelPanel" x="565" y="0" width="167" height="116"/>
+        <panel name="ScorePanel" x="398" y="148" width="334" height="160"/>
+        <panel name="RecordPanel" x="398" y="340" width="334" height="314"/>
+    </panels>
+    <score>
+        <property key="1" value="10"/>
+        <property key="2" value="20"/>
+        <property key="3" value="50"/>
+        <property key="4" value="80"/>
+    </score>
+</configuration>
